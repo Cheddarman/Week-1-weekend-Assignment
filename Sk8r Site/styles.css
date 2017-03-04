@@ -161,13 +161,22 @@ p{
 }
 
 .skateboarders .arrow {
-  width:170px;
+  width:200px;
   height:100px;
   line-height:100px;
   position:absolute;
   top:50px;
-  left:-200px;
+  left:-210px;
   font-size: 20px;
+}
+
+.skateboarders .arrow:after {
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  
+  border-left: 60px solid green;
 }
 
 #sk8boards {
@@ -194,26 +203,44 @@ form {
 	height:300px;
 	width: 450px;
 	display: inline-block;
-
+	text-transform:uppercase;
 }
 
 input {
 	width: 450px;
-	height: 40px;
 	border-left:inset 3px white;
 	border-top:inset 3px white;
 	margin:10px;
+	padding:10px;
+	font-size: 16px;
 }
 textarea {
 	width: 450px;
 	height:100px;
 	margin:10px;
+	padding:10px;
 	border-left:inset 3px white;
 	border-top:inset 3px white;
 }
+::-webkit-input-placeholder {
+	font-size:16px;
+	color:#C4C4C4;
+	text-transform: uppercase;
+}
 
-#contacttext > img {
+#contacttext > a > img {
 	width:20px;
+}
+
+button {
+	color:white;
+	text-transform: uppercase;
+	background-color:#B4292E;
+	font:18px arial,sans-serif;
+	width:200px;
+	height:40px;
+	border: none; 
+	margin-left:260px;
 }
 
 #contact:after {
