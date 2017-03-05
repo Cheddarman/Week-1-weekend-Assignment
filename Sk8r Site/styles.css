@@ -3,7 +3,7 @@ html {box-sizing:border-box;}
 
 body {
 	margin:auto;
-	width:1000px;
+	max-width:1000px;
 }
 
 header {
@@ -25,9 +25,14 @@ header {
 	z-index:-1;
 }
 
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 nav > a{
 	width:235px;
-	margin-left: 10px;
+	text-transform: uppercase;
 	color:white;
 	background-color:#B4292E;
 	line-height: 40px;
@@ -37,7 +42,9 @@ nav > a{
 	font-size: 22px;
 	font-family: arial,sans-serif;
 	margin-bottom: 15px;
+	margin-top: 15px;
 	box-shadow:0px 4px 0px rgba(188, 188, 188, 0.3);
+	
 }
 
 #social > img {
@@ -78,6 +85,12 @@ nav > a{
 	margin-bottom: 10px;
 }
 
+@media (max-width: 800px){
+	#wordblocks {
+		justify-content: space-around;
+	}
+}
+
 .wrdblock {
 	min-width: 200px;
 	max-width: 300px;
@@ -85,6 +98,8 @@ nav > a{
 	padding:20px;
 	font-family: font:15px arial, sans-serif;
 	box-shadow:0px 4px 0px rgba(188, 188, 188, 0.3);
+	position: relative;
+	margin-bottom: 15px;
 }
 
 h3 {
@@ -102,12 +117,18 @@ h3 {
 p{
 	font:14px arial, sans-serif;
 	color:#888;
+	margin-bottom: 20px;
 }
 
 .wrdblock > a {
 	color:red;
 	display: block;
 	text-align: center;
+	margin-bottom: 15px;
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+	right:0px;
 }
 
 #sbcontainer {
@@ -159,6 +180,12 @@ p{
 	padding-top: 85px;
 }
 
+@media (max-width: 1000px){
+	.skateboarders div:nth-child(3) {
+	width: 330px;
+	padding-top:40px;
+	}
+}
 .skateboarders div:nth-child(4) {
   width: 320px;
   height:450px;
@@ -167,6 +194,14 @@ p{
   background: url("images/sk8er-2.png") -400px no-repeat;
 }
 
+@media (max-width: 1000px){
+	.skateboarders div:nth-child(4) {
+		margin-top: 10px;
+		height:220px;
+		width:330px;
+		padding-top: 40px;
+	}
+}
 .skateboarders .arrow {
   width:200px;
   height:100px;
@@ -195,6 +230,11 @@ p{
   top:50px;
 }
 
+@media (max-width: 1000px) {
+	.skateboarders div:nth-child(6){
+		display:none;
+	}
+}
 #sk8boards {
 	background-color:white;
 	display: flex;
@@ -266,4 +306,12 @@ button {
   content:"";
   display:block;
   clear:both;
+}
+
+/* now is the time where Radu makes for the responsive */
+
+@media screen(max-width:700px;){
+	body {
+		width:100%;
+	}
 }
