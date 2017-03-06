@@ -1,0 +1,18 @@
+html {box-sizing:border-box;}
+*, *:before, *:after {box-sizing:inherit;}
+
+header {
+	position: relative;
+	min-height:500px;
+	background-image: url("images/bigwav.jpg");
+}
+
+.overlay {
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	background:rgba(0,120,250,.5);
+	
+}
