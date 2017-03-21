@@ -7,6 +7,25 @@ header {
 	background-image: url("images/bigwav.jpg");
 }
 
+header img {
+	width: 30px;
+}
+
+header nav {
+
+}
+
+.middletopbit {
+	text-align: center;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+h1 {
+	font-size: 90px;
+	margin:0;
+}
+
 .overlay {
 	position:absolute;
 	width: 100%;
@@ -15,4 +34,52 @@ header {
 	left:0;
 	background:rgba(0,120,250,.5);
 	
+}
+
+.mainbit {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+article {
+	width: 600px;
+  margin-left:150px;
+}
+
+aside {
+  width:400px;
+  margin-left: 100px;
+}
+
+.face {
+  width:100px;
+  height:100px;
+  background-image: url(images/Face.jpg);
+  background-size:contain;
+  border-radius: 50%;
+  margin:auto;
+}
+
+.circlebit {
+  text-align: center;
+}
+
+aside img {
+  width: 400px;
+
+}
+
+.bottombit {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottombit h2 {
+  width: 100%;
+  text-align: center;
 }
